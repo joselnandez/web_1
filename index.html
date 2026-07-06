@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atalaya Studio</title>
+    <meta name="description" content="Landing Atalaya Studio">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            
+            <a href="#">
+                <img src="assets/logo.png" class="logo" alt="Logo de Atalaya Studio">
+            </a>
+
+            <button class="menu" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section  class="testimonios ">
+            <h2 class="section-title">Testimonios</h2>
+            <div id="testimonios" class="container testimonios-contenedor">
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2 class="section-title">Contáctanos</h2>
+                <form class="contacto-form" id="form-contacto">
+                    <div class="form-group">
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" id="nombre" title="El nombre es requerido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo*</label>
+                        <input type="email" id="email" required title="El correo es requerido">
+                    </div>
+                    <div class="form-group">
+                        <label for="texto">Mensaje*</label>
+                        <textarea id="texto" required title="El mensaje es requerido"></textarea>
+                    </div>
+                    <button id="btn-submit" type="submit" class="btn" disabled>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>2026 Atalaya Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script type="module" src="js/main.min.js"></script>
+</body>
+</html>
